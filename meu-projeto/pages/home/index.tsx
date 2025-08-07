@@ -8,12 +8,18 @@ export default function Home() {
   return (
     <Container>
       <Hero>
-        <Heading size="4xl">Agendamento Desconplicado</Heading>
-        <Text size="lg">Conecte seu calendário e permita que as pessoas marquem agendamentos no seu tempo livre.</Text>
+        <Heading as="h1" size="4xl">Agendamento Desconplicado</Heading>
+        <Text size="xl">Conecte seu calendário e permita que as pessoas marquem agendamentos no seu tempo livre.</Text>
       </Hero>
 
       <Preview>
-        
+        <Image 
+        src={previewImage}
+        height={400}
+        quality={100}
+        priority
+        alt="preview image"
+        />
       </Preview>
     </Container>
   )
